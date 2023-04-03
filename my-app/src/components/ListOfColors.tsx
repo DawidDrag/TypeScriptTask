@@ -4,6 +4,7 @@ type ListOfColorsProp = {
 
     title: string,
     arrayOfColors: string[]
+    backgroundColor ?: string;
 
 }
 
@@ -11,7 +12,7 @@ const ListOfColors = (props: ListOfColorsProp) => {
 
 
     return (
-        <div>
+        <div className="listOfColors">
             <h2>{props.title}</h2>
 {props.arrayOfColors.map((color) => {
     return (

@@ -12,9 +12,9 @@ const Form = (props: FormProps) => {
 
     return(
         <form onSubmit={props.onSubmit}>
-            <input value={props.inputTextValue} name='dawid' onChange={props.onChange} type='text'></input>
-            <input type='submit'></input>
-            <input onClick={props.onClick} value='Clear localStore' type='button'></input>
+            <input className='input' value={props.inputTextValue} name='dawid' onChange={props.onChange} type='text'></input>
+            <input className='button' type='submit'></input>
+            <input className='button' onClick={props.onClick} value='Clear localStore' type='button'></input>
         </form>
     )
 }

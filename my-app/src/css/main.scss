@@ -1,0 +1,51 @@
+@use './variables' as *;
+
+
+body{
+    background-color: $background-color;
+    font-family: $primary-font;
+}
+
+.App{
+    @extend %center;
+    margin-top: 20px;
+}
+
+%center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%input {
+   border-radius: 5px;
+   border: 1px solid #ffff;
+   padding: 10px;
+   margin: 10px;
+}
+
+.input{
+    @extend %input;
+}
+
+.button{
+    cursor: pointer;
+    font-family: $primary-font;
+    @extend %input;
+}
+
+
+
+.listOfColors {
+    @extend %center;
+   
+  & h3{
+    @extend %center;
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: $background-color__item
+  }  
+}

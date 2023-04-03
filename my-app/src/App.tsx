@@ -2,7 +2,7 @@ import React from 'react';
 import Form from './components/Form';
 import ListOfColors from './components/ListOfColors';
 
-import './App.css';
+import './css/main.scss'
 
 
 function App() {
