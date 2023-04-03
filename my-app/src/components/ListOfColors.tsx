@@ -4,8 +4,6 @@ type ListOfColorsProp = {
 
     title: string,
     arrayOfColors: string[]
-    backgroundColor ?: string;
-
 }
 
 const ListOfColors = (props: ListOfColorsProp) => {
